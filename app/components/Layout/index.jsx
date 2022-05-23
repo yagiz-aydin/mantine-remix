@@ -1,5 +1,6 @@
 import { Container as MContainer, Center } from '@mantine/core';
 import { LayoutContainer } from "./styled";
+import Header from "../Header";
 
 const Layout = ({bgSpeed, children}) => {
   return (
@@ -10,6 +11,7 @@ const Layout = ({bgSpeed, children}) => {
             <div class="stars"></div>
             <div class="stars"></div>
             <Center className="center-container">
+                <Header/> 
                 {children}
             </Center>
         </div>
